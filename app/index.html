@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MVVM Sample Project</title>
+</head>
+
+<body>
+    <div id="mvvm-app">
+        <input type="text" v-model="someStr">
+        <input type="text" v-model="child.someStr">
+        <!-- <p v-class="className" class="abc">
+            {{someStr}}
+            <span v-text="child.someStr"></span>
+        </p> -->
+        <p>{{getHelloWord}}</p>
+        <p v-html="htmlStr" v-class="someStr"></p>
+        <p v-show="infoShow">test v-show</p>
+        <p v-style="fontStyle">{{someStr}}</p>
+        <button v-on:click="clickBtn">change model</button>
+    </div>
+    <div class="app">
+    </div>
+</body>
+
+</html>

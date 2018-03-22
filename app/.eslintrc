@@ -1,0 +1,27 @@
+{
+  "extends": "standard",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "globals": {
+    "$": false,
+    "_": false,
+    "clearInterval": false,
+    "clearTimeout": false,
+    "layer": false,
+    "lazySizes": false,
+    "request": false,
+    "setInterval": false,
+    "setTimeout": false,
+    "Vue": false,
+    "VueRouter": false
+  },
+  "plugins": [],
+  "root": true,
+  "rules": {
+    "space-before-function-paren": [2, "never"]
+  },
+  "parser": "babel-eslint"
+}
